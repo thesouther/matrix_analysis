@@ -15,6 +15,7 @@ def LU_factorization(mat, m, n, output_file):
     # h_file = h5py.File(output_file, 'w')
     arr_idx = 0
     '''
+    # 对使用行标进行增广的矩阵，使用部分消元法进行初等行变换
     mat_B = mat.copy()
     for row in range(m-1):
         curr_col = np.abs(mat[row:,row])
@@ -45,6 +46,7 @@ def LU_factorization(mat, m, n, output_file):
     # h_file.close()
     '''
 
+    # 得到上三角阵和下三角阵，并输出
     U = np.triu(mat[:, :-1],0)
     for k in range(m):
         mat_B[k,k] =1
