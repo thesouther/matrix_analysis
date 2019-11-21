@@ -1,5 +1,4 @@
 # 矩阵分析大作业
-#### 从聪  201928015029010  congcong19@mails.ucas.ac.cn
 
 本项目为矩阵分析与应用课程课后大作业，具体包括矩阵的LU分解、QR分解（Gram-Schmidt）、正交约简 (Householder reduction 和Givens reduction)四个部分。
 ## 环境
